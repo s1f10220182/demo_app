@@ -1,7 +1,7 @@
 import React from "react";
-import App from "./App";
+// import App from "./App";
 
-const itemList = () => {
+const ItemList = () => {
   return (
     <div>
       <h1>Hello World</h1>
@@ -9,4 +9,4 @@ const itemList = () => {
   );
 }
 
-export default itemList;
+export default ItemList;
