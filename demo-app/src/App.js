@@ -1,11 +1,15 @@
 import React from 'react';
-import itemList from './itemList';
+// import ItemList from './itemList';
+import Header from './header/Header';
+import Main from './main/Main';
+import Footer from './footer/Footer';
 
 const App = () => {
   return (
     <div>
-      <h1>Hello World</h1>
-      <itemList/>
+      <Header/>
+      <Main/>
+      <Footer/>
     </div>
   );
 }
