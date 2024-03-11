@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div>
       <header>
-      <h1><a href="https://google.com">Demo-app</a></h1>
+      <h1><a href="/">Demo-app</a></h1>
         {/*<ul>
           <li>1</li>
           <li>2</li>

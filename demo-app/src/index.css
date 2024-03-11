@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 
 code {
@@ -14,7 +15,7 @@ code {
 }
 
 header{
-  background:rgba(0,0,0,0.8);
+  background:rgba(0,0,0,1);
   color: white;
   width: 100%;
   position: fixed;
@@ -25,7 +26,16 @@ header h1{
   margin: 0;
   padding: 20px;
   color: white;
+}
+
+header a{
+  color: white;
   border-bottom: none;
+  text-decoration: none;
+}
+
+header a:hover{
+  border: 0.5px solid rgb(164, 164, 164);
 }
 
 /* header ul{
@@ -33,21 +43,43 @@ header h1{
   position: fixed;
 } */
 
-#main{
-  background-color: blue;
-  height: 1000px;
+.main{
+  background-color: white;
   padding-top: 80px;
+  padding-left: 10px;
 }
 
-#main h2{
+.main h3{
   margin: 0;
 }
 
+.price{
+  color: rgb(193, 56, 50);
+  margin-top: 0;
+}
+
+.item {
+  display: inline-block;
+  margin: 10px;
+  margin-top: 20px;
+}
+/* .main .title{
+  display: block;
+} */
+/* .main img{
+  width: 100px; */
+
+/* } */
 
 footer{
+  width: 100%;
+  height: 100px;
   background-color: rgb(182, 182, 182);
+  position: absolute;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
 }
 
 footer ul{
-  margin: 0;
+  /* margin: 0; */
+  padding-left: 30px;
 }
