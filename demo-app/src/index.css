@@ -53,23 +53,55 @@ header a:hover{
   margin: 0;
 }
 
+.main h4{
+  color: rgb(114, 114, 0);
+  margin: 0;
+}
+
 .price{
   color: rgb(193, 56, 50);
   margin-top: 0;
 }
 
 .item {
+  /* margin: px; */
   display: inline-block;
   margin: 10px;
   margin-top: 20px;
+  width: 10em;
 }
-/* .main .title{
-  display: block;
-} */
-/* .main img{
-  width: 100px; */
 
-/* } */
+
+
+.main img{
+  width: 150px;
+  border: 0.5px solid rgb(175, 175, 175);
+  margin: 0;
+}
+
+.imgURL:hover{
+  opacity: 0.5;
+}
+
+.titleURL{
+  color: black;
+}
+
+/* .titleURL:hover{
+
+} */
+
+.title{
+  /* display: inline-block; */
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.title p{
+  margin: 0;
+}
+
 
 footer{
   width: 100%;
