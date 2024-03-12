@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import Xml from "./Xml";
 
-// let count = 0;
 const Main = () => {
   const appid = 'dj00aiZpPVl0RmEzVno0MDJxZyZzPWNvbnN1bWVyc2VjcmV0Jng9NmM-';
   const API_URL = `https://shopping.yahooapis.jp/ShoppingWebService/V1/highRatingTrendRanking?appid=${appid}`
@@ -23,7 +21,6 @@ const Main = () => {
   loadItems();
   //   console.log(data);
   }, [])
-  // Xml();
 
   return (
     <div className="main">
@@ -47,7 +44,7 @@ const Main = () => {
               </div>
             </a>
             <h3 className="price">{price}円</h3>
-            <h4>{rate}</h4>
+            <h4>★{rate}</h4>
           </div>
         );
       })}
