@@ -53,7 +53,7 @@ header a:hover{
   margin: 0;
 }
 
-.main h4{
+.rate{
   color: rgb(114, 114, 0);
   margin: 0;
 }
@@ -100,6 +100,29 @@ header a:hover{
 
 .title p{
   margin: 0;
+}
+
+.detail {
+  height: 1000px;
+}
+
+.detail h1{
+  display: inline-block;
+  margin: 90px 10px 10px;
+  font-size: 1.5rem;
+}
+
+.detail h2{
+  display: inline;
+}
+
+.detail p{
+  display: inline;
+}
+
+.detail img{
+  margin: 20px 0 10px 10px;
+  width: 150px;
 }
 
 
