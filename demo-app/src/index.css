@@ -49,8 +49,16 @@ header a:hover{
   padding-left: 10px;
 }
 
-.main h3{
-  margin: 0;
+.main h2{
+  margin-top: 20px;
+}
+
+.items {
+  margin-bottom: 150px;
+}
+
+.rank{
+  font-weight: 200;
 }
 
 .rate{
@@ -71,9 +79,7 @@ header a:hover{
   width: 10em;
 }
 
-
-
-.main img{
+.item img{
   width: 150px;
   border: 0.5px solid rgb(175, 175, 175);
   margin: 0;
@@ -104,12 +110,16 @@ header a:hover{
 
 .detail {
   height: 1000px;
+  margin: 20px;
+  margin-top: 0;
+  margin-bottom: 100px;
 }
 
 .detail h1{
   display: inline-block;
-  margin: 90px 10px 10px;
+  margin: 140px 10px 10px;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .detail h2{

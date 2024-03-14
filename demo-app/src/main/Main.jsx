@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {useNavigate} from 'react-router-dom'
+import { Box, Typography } from '@mui/material'
 // import Detail from "../func/Detail";
 
 const Main = () => {
@@ -30,9 +31,10 @@ const Main = () => {
   // }
 
   return (
-    <div className="main">
-      <h1>今週のランキング!</h1>
+    <Box className="main">
+      <Typography variant="h2" >今週のランキング!</Typography>
       <hr></hr>
+      <Box className="items">
       {items.map((item, n) => {
         const itemName = item.item_information.name;
         const price = item.item_information.regular_price.toLocaleString();
@@ -44,20 +46,20 @@ const Main = () => {
         // console.log(price, typeof(price))
 
         return (
-          <div key={n+1} className="item" onClick={() => navigate('/detail', {state:itemName})}>
-            <h3>第{n+1}位</h3>
+          <Box key={n+1} className="item" onClick={() => navigate('/detail', {state:itemName})}>
+            <Typography variant="h6" className="rank">第{n+1}位</Typography>
               <img src={item.image.medium} alt={n+1} onClick={() => navigate('/detail', {state:itemName})} className="imgURL"/>
-            <div className="title" onClick={() => navigate('/detail', {state:itemName})}>
-                <p>{itemName.slice(0, 25)}</p>
-              </div>
-            <h3 className="price">{price}円</h3>
-            <h4 className="rate">★{rate}</h4>
-          </div>
+              <Box className="title" onClick={() => navigate('/detail', {state:itemName})}>
+                <Typography variant="p">{itemName.slice(0, 25)}</Typography>
+              </Box>
+            <Typography variant="h5" className="price">{price}円</Typography>
+            <Typography variant="h6" className="rate">★{rate}</Typography>
+          </Box>
         );
       })}
-      <h2>title</h2>
-      <h2>title</h2>
-    </div>
+      </Box>
+      <hr></hr>
+    </Box>
   );
 }
 
