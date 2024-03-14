@@ -1,5 +1,7 @@
 import React, { useState }from "react";
-import { useLocation, useNavigate } from 'react-router-dom'
+import {  useNavigate } from 'react-router-dom'
+import { Box, Typography, Button } from '@mui/material'
+import SearchIcon from '@mui/icons-material/Search';
 
 // import Button from '@mui/material/Button';
 // import {useForm} from 'react-hook-form';
@@ -7,11 +9,8 @@ import { useLocation, useNavigate } from 'react-router-dom'
 
 const Header = () => {
   const [text, setText] = useState('');
-  const location = useLocation();
-  // const { register, reset, handleSubmit } = useForm({
-  //   mode: onsubmit,
-  //   defaultValues: {name: "aaa", email: "test@test.com"}
-  // })
+  // const location = useLocation();
+
   const navigate = useNavigate();
 
   const onchangeText = (e) => {
@@ -25,14 +24,14 @@ const Header = () => {
 
   return (
     <header>
-    <h1><a href="/">Demo-app</a></h1>
+    <Typography variant="h2"><a href="/">Yahoo! Demo App</a></Typography>
     <form onSubmit={handleSubmit}> {/* onSubmitイベントハンドラーを追加 */}
-      <input onChange={onchangeText} type="text"/>
-      <button type="submit">検索</button> {/* buttonタイプをsubmitに変更 */}
+      <input onChange={onchangeText} type="text" placeholder="何をお探しですか？"/>
+      <Button variant="contained" size="small" type="submit"><SearchIcon /></Button> {/* buttonタイプをsubmitに変更 */}
     </form>
 
     </header>
-  )
+  );
 }
 
 export default Header;

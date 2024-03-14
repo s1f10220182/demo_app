@@ -31,16 +31,13 @@ const Search = () => {
   // const navigate = useNavigate();
   const navigate = useNavigate();
 
-//   {items.length > 0 &&
-//     <Box>
-//       <Typography variant="h2">{items}の検索結果:</Typography>
-//       <hr></hr>
-//     </Box>
-// }
 
   return (
     <Box className="search">
-      <Typography variant="h1">hello</Typography>
+      <Box>
+        <Typography variant="h2"><b>{query}</b>の検索結果:</Typography>
+      </Box>
+
       <hr></hr>
 
       {items.length > 0 && items.map((item, n) => {
@@ -59,9 +56,6 @@ const Search = () => {
           </Box>
       );
     })}
-    <hr></hr>
-
-      <Typography variant="h1">hello</Typography>
     </Box>
   );
 }
