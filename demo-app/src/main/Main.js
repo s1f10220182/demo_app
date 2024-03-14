@@ -30,15 +30,15 @@ const Main = () => {
 
   return (
     <Box className="main">
+      <Box className="cols">
       <Typography variant="h2" >今週のランキング!</Typography>
       <hr></hr>
       <Box className="items">
       {items.map((item, n) => {
-        const url = item.item_information.url;
         const itemName = item.item_information.name;
         const price = item.item_information.regular_price.toLocaleString();
         const rate = item.review.rate;
-        // console.log(price, typeof(price))
+
         return (
           <Box key={n+1} className="item" onClick={() => navigate('/detail', {state:itemName})}>
             <Typography variant="h6" className="rank">第{n+1}位</Typography>
@@ -53,7 +53,7 @@ const Main = () => {
         );
       })}
       </Box>
-      <hr></hr>
+      </Box>
     </Box>
   );
 }
