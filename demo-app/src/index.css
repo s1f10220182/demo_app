@@ -49,8 +49,16 @@ header a:hover{
   padding-left: 10px;
 }
 
-.main h3{
-  margin: 0;
+.main h2{
+  margin-top: 20px;
+}
+
+.items {
+  margin-bottom: 150px;
+}
+
+.rank{
+  font-weight: 200;
 }
 
 .main h4{
@@ -71,9 +79,7 @@ header a:hover{
   width: 10em;
 }
 
-
-
-.main img{
+.item img{
   width: 150px;
   border: 0.5px solid rgb(175, 175, 175);
   margin: 0;
@@ -102,6 +108,36 @@ header a:hover{
   margin: 0;
 }
 
+<<<<<<< HEAD
+.detail {
+  height: 1000px;
+  margin: 20px;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+.detail h1{
+  display: inline-block;
+  margin: 140px 10px 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.detail h2{
+  display: inline;
+}
+
+.detail p{
+  display: inline;
+}
+
+.detail img{
+  margin: 20px 0 10px 10px;
+  width: 150px;
+}
+
+=======
+>>>>>>> main
 
 footer{
   width: 100%;
