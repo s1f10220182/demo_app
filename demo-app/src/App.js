@@ -7,9 +7,10 @@ import Footer from './footer/Footer';
 import Search from './func/Search';
 import { Routes, Route } from "react-router-dom";
 
+
 const App = () => {
   return (
-    <div className='App'>
+    <div>
       <Header/>
       <Routes>
         <Route path='/' element={<Main/>}/>
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/search' element={<Search/>}/>
         {/*<Route path='*' element={<Notfound/>}/>*/}
       </Routes>
+
       <Footer/>
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {useNavigate} from 'react-router-dom'
 import { Box, Typography } from '@mui/material'
+import Detail from "../func/Detail";
 // import Detail from "../func/Detail";
 
 const Main = () => {
@@ -24,11 +25,8 @@ const Main = () => {
   loadItems();
   //   console.log(data);
   }, [])
+
   const navigate = useNavigate();
-  // const handleClick = (elem) =>{
-  //   navigate(elem)
-  //   // ("/detail", {state:id})
-  // }
 
   return (
     <Box className="main">
@@ -36,15 +34,11 @@ const Main = () => {
       <hr></hr>
       <Box className="items">
       {items.map((item, n) => {
+        const url = item.item_information.url;
         const itemName = item.item_information.name;
         const price = item.item_information.regular_price.toLocaleString();
         const rate = item.review.rate;
-        const seller_id = item.seller.id;
-        const code = item.item_information.code
-        const needCode = `${seller_id}_${code}`
-        // console.log(`seller_id:${seller_id}, code:${code}`)
         // console.log(price, typeof(price))
-
         return (
           <Box key={n+1} className="item" onClick={() => navigate('/detail', {state:itemName})}>
             <Typography variant="h6" className="rank">第{n+1}位</Typography>
@@ -55,6 +49,7 @@ const Main = () => {
             <Typography variant="h5" className="price">{price}円</Typography>
             <Typography variant="h6" className="rate">★{rate}</Typography>
           </Box>
+
         );
       })}
       </Box>
