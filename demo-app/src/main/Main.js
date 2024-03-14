@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {useNavigate} from 'react-router-dom'
 import { Box, Typography } from '@mui/material'
-import Detail from "../func/Detail";
+// import Detail from "../func/Detail";
 // import Detail from "../func/Detail";
 
 const Main = () => {
